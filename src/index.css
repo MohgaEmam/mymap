@@ -1,0 +1,169 @@
+body {
+    background-color: cadetblue;
+    font: 18px 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: darkslategrey;
+    font-size:x-large;
+}
+
+.list {
+    background-color: lightcoral;
+    padding: 20px;
+    position: relative;
+    -ms-transform: translate(-260px, 0);
+    -webkit-transform: translate(-260px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.5s ease;
+    width: 200px;
+    height: 100vh;
+    z-index: 5;
+}
+
+.map {
+    height: 100%;
+}
+
+.places-list {
+    color: darkcyan;
+    height: 380px;
+    list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    font-weight: bold;
+}
+
+.locations {
+    margin: 10px 0;
+    color: darkcyan;
+}
+
+.search-places {
+    background-color: lightcoral;
+    width: 190px;
+    background-position: 20px center;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-color: cadetblue;
+    color: darkcyan;
+    font-weight: bold;
+}
+.error {
+    color: blueviolet;
+    font-style: italic;
+    padding-top: 400px;
+    text-align: center;
+}
+
+.empty-input {
+    color: aquamarine;
+    font-style: italic;
+    text-align: center;
+}
+
+.listfun {
+    background: cadetblue;
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+    fill: cadetblue;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    z-index: 5;
+}
+
+.open {
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.loading-map {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.loading-fs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loading-message {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.locations-title{
+    margin: 0 0 0 10px;
+}
+
+.locations-data {
+    font-style: italic;
+    margin: 0 0 0 10px;
+}
+.locations-data {
+    font-size: 14px;
+}
+.locations-link {
+    color: #360dec;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 0 0 10px;
+    padding: 10px;
+    text-align: right;
+    text-decoration: none;
+}
+    .locations-link:hover {
+        color: #3594c5;
+}
+.fs-link {
+    height: 30px;
+    vertical-align: middle;
+}
+.venue-error {
+    color: #360dec;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: cadetblue;
+}
+
+@media (min-width: 450px) {
+    ::-webkit-scrollbar-thumb {
+        background: cadetblue;
+        border-radius: 10px;
+    }
+
+    .map {
+        margin-left: 300px
+    }
+
+    .list {
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .listfun {
+        display: none;
+    }.places-list {
+        height: 60vh;
+    }
+
+}
